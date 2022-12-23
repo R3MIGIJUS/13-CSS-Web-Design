@@ -14,14 +14,18 @@ for (let i = 0; i < planButtons.length; i++) {
 
 backdrop.addEventListener("click", function () {
   backdrop.style.display = "none";
-  modal.style.display = "none";
   mobileNav.style.display = "none";
+  if (modal) {
+    modal.style.display = "none";
+  }
 });
 
-modalActionNo.addEventListener("click", function () {
-  backdrop.style.display = "none";
-  modal.style.display = "none";
-});
+if (modalActionNo) {
+  modalActionNo.addEventListener("click", function () {
+    modal.style.display = "none";
+    backdrop.style.display = "none";
+  });
+}
 
 toggleButton.addEventListener("click", function () {
   mobileNav.style.display = "block";
