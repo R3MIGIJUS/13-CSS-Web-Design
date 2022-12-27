@@ -32,6 +32,9 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
+.mobile-menu {
+  width: 100%;
+}
 
 .toggle-button {
   width: 3rem;
@@ -41,6 +44,8 @@ body {
   padding-top: 0;
   padding-bottom: 0;
   vertical-align: middle;
+  float: right;
+  margin-right: 20px;
 }
 
 .toggle-button:focus {
@@ -59,22 +64,22 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.5rem;
-  height: 1.5rem;
+  font-size: 2.5rem;
+  height: 2.5rem;
   display: inline-block;
   vertical-align: middle;
+  margin-left: 20px;
 }
 
 .main-header__brand img {
   height: 100%;
-  /* width: 100%; */
 }
 
 .main-nav {
-  display: inline-block;
-  text-align: right;
+  display: none;
+  /* text-align: right;
   width: calc(100% - 122px);
-  vertical-align: middle;
+  vertical-align: middle; */
 }
 
 .main-nav__items {
@@ -129,8 +134,8 @@ body {
 }
 
 .main-footer__link {
-  display: inline-block;
-  margin: 0 1rem;
+  display: block;
+  margin: 1rem 0;
 }
 
 .main-footer__link a {
@@ -221,4 +226,37 @@ body {
 
 .button:focus {
   outline: none;
+}
+
+@media (min-width: 40rem) {
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 122px);
+    vertical-align: middle;
+    float: right;
+    margin-top: 10px;
+  }
+  .mobile-menu {
+    height: 100%;
+    width: auto;
+  }
+  .toggle-button {
+    display: none;
+    margin-right: 0px;
+  }
+
+  .main-header {
+    padding: 1rem 1rem;
+    vertical-align: middle;
+  }
+  .main-footer {
+    background: black;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  .main-footer__link {
+    display: inline-block;
+    margin: 0 1rem;
+  }
 }

@@ -11,6 +11,7 @@ Design: Sign up
 # Project features
 
 - Full CSS features;
+- Responsive design;
 
 # Author
 
