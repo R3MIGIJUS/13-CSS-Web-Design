@@ -1,0 +1,79 @@
+main {
+  padding: 2rem;
+}
+
+.signup-title {
+  color: red;
+  text-align: center;
+}
+
+.signup-form input,
+label,
+select {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  font: inherit;
+  padding: 0.2rem 0.5rem;
+}
+
+.signup-form input,
+select {
+  border: 2px solid grey;
+}
+
+.signup-form label {
+  font-weight: bold;
+}
+
+.signup-form input[id|="agree"],
+label[for*="agree"] {
+  display: inline-block;
+  width: auto;
+}
+
+.signup-form label[for*="agree"] a {
+  color: rgb(13, 67, 246);
+}
+.signup-form input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+}
+
+.signup-form button[class="button"] {
+  display: block;
+  margin-top: 1rem;
+}
+
+.signup-form select[id="title"]:hover,
+.signup-form select[id="title"] option:hover {
+  border: 2px solid rgb(240, 8, 8);
+  background-color: rgb(243, 157, 165);
+}
+
+.signup-form input:hover {
+  border: 2px solid rgb(240, 8, 8);
+  background-color: rgb(243, 157, 165);
+}
+.signup-form input:invalid,
+.signup-form select:invalid {
+  border: 2px solid rgb(240, 8, 8);
+  background-color: rgb(243, 157, 165);
+}
+
+@media (min-width: 40rem) {
+  .signup-form {
+    width: 45%;
+    margin: auto;
+    padding: 1rem 0;
+  }
+  main {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 2rem;
+  }
+  .signup-form label {
+    font-weight: normal;
+    font-size: 1.5rem;
+  }
+}
