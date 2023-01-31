@@ -5,6 +5,7 @@ main {
 .signup-title {
   color: red;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .signup-form input,
