@@ -36,22 +36,30 @@
 }
 
 .plan__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin: auto;
+  margin: 3rem auto;
 }
 
 .plan {
   background: #d5ffdc;
-  text-align: center;
   padding: 1rem;
-  display: block;
-  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.2rem 0;
+  width: 100%;
 }
 
 .plan--highlighted {
   background: #19b84c;
   color: white;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 .plan__annotation {
@@ -101,13 +109,17 @@
 
 .key-feature__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
-  text-align: center;
 }
 
 .key-feature {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -187,18 +199,22 @@
   }
 
   .plan {
-    display: inline-block;
     width: 30%;
-    vertical-align: middle;
     min-width: 13rem;
     max-width: 25rem;
     margin: 0px;
   }
+  .key-feature__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 
   .key-feature {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
   #key-features {
     background: #ff1b68;
@@ -207,7 +223,11 @@
   }
 
   .plan__list {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
     max-width: 1200px;
   }
 }
