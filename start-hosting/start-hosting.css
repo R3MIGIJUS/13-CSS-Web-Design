@@ -2,6 +2,18 @@ main {
   padding: 2rem;
 }
 
+.signup-form {
+  display: grid;
+  margin: auto;
+
+  margin-top: 3rem;
+  row-gap: 2rem;
+}
+
+.signup-checkbox {
+  grid-column-start: span 2;
+}
+
 .signup-title {
   color: red;
   text-align: center;
@@ -12,7 +24,6 @@ main {
 label,
 select {
   display: block;
-  margin-top: 1rem;
   width: 100%;
   font: inherit;
   padding: 0.2rem 0.5rem;
@@ -25,6 +36,7 @@ select {
 
 .signup-form label {
   font-weight: bold;
+  font-size: 1rem;
 }
 
 .signup-form input[id|="agree"],
@@ -43,7 +55,6 @@ label[for*="agree"] {
 
 .signup-form button[class="button"] {
   display: block;
-  margin-top: 1rem;
 }
 
 .signup-form select[id="title"]:hover,
@@ -64,17 +75,28 @@ label[for*="agree"] {
 
 @media (min-width: 40rem) {
   .signup-form {
-    width: 45%;
-    margin: auto;
+    width: 70%;
     padding: 1rem 0;
+    grid-template-columns: 200px 400px;
+    row-gap: 1rem;
+    margin-top: 5rem;
+    justify-content: center;
+  }
+
+  .signup-form #title {
+    grid-column-start: span 2;
+  }
+
+  .signup-title {
+    margin-top: 7rem;
   }
   main {
     max-width: 1000px;
     margin: auto;
-    margin-top: 2rem;
   }
   .signup-form label {
     font-weight: normal;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
   }
 }
